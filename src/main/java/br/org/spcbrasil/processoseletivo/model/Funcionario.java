@@ -1,6 +1,5 @@
 package br.org.spcbrasil.processoseletivo.model;
 
-
 import java.io.Serializable;
 import java.util.Date;
 
@@ -12,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "tb_funcionario")
@@ -23,11 +23,11 @@ public class Funcionario extends Pessoa implements Serializable{
 	private static final long serialVersionUID = -3901580258736391753L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private Long id;
 	
+	@NotNull
 	@Column(name = "cod_funcionario")
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long codFuncionario;
 	
 	@Temporal(TemporalType.DATE)
