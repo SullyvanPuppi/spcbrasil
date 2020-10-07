@@ -39,7 +39,7 @@ public class SwaggerConfig {
 		
 		ApiInfo apiInfo = new ApiInfo(
 				"API Processo Seletivo SPC Brasil",
-				"API Demonstrativa para exemplos do processo seletivo SPC Brasil (Deploy)",
+				"API Demonstrativa para exemplos do processo seletivo SPC Brasil (continuous deployment)",
 				"1.0",
 				"Terms of Service",
 				new Contact("Sullyvan Puppi","https://spuppi.com/","spuppi@gmail.com"),
